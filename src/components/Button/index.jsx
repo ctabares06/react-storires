@@ -1,9 +1,9 @@
 import React from 'react';
 import { ButtonBase } from "@mui/material";
 
-const Button = ({...props}) => {
+const Button = ({label, ...props}) => {
   return (
-    <ButtonBase {...props} />
+    <ButtonBase {...props}>{label}</ButtonBase>
   ) 
 }
 
