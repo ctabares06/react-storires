@@ -24,6 +24,18 @@ export default responsiveFontSizes(
       fontFamily: ['Montserrat', 'sans-serif'].join(','),
     },
     components: {
+      MuiTypography: {
+        variants: [
+          {
+            props: { color: 'light' },
+            style: ({ theme }) => ({
+              color: theme.palette.gray.main,
+            })
+          }
+        ]
+      },
+      MuiAppBar: {
+      },
       MuiButtonBase: {
         defaultProps: {
         },
