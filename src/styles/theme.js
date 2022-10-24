@@ -5,9 +5,10 @@ export default responsiveFontSizes(
     palette: {
       gray: {
         main: '#ECE5F0',
+        light: '##F6F7FA',
       },
       dark: {
-        main: '#3C3C3B',
+        main: '#12130f',
       },
       yellow: {
         main: '#F5D547',
@@ -27,14 +28,34 @@ export default responsiveFontSizes(
       MuiTypography: {
         variants: [
           {
-            props: { color: 'light' },
+            props: { color: 'gray' },
             style: ({ theme }) => ({
               color: theme.palette.gray.main,
             })
-          }
+          },
+          {
+            props: { color: 'lightgray' },
+            style: ({ theme }) => ({
+              color: theme.palette.gray.main,
+            })
+          },
+          {
+            props: { color: 'orange' },
+            style: ({ theme }) => ({
+              color: theme.palette.orange.main,
+            })
+          },
         ]
       },
       MuiAppBar: {
+        styleOverrides: {
+          root: ({ theme }) => ({
+            paddingLeft: theme.spacing(1),
+            paddingRight: theme.spacing(1),
+            paddingBottom: theme.spacing(1),
+            paddingTop: theme.spacing(1),
+          })
+        }
       },
       MuiButtonBase: {
         defaultProps: {
@@ -48,7 +69,6 @@ export default responsiveFontSizes(
             paddingLeft: theme.spacing(1),
             paddingRight: theme.spacing(1),
             fontWeight: 'bold',
-            textTransform: 'uppercase',
           }),
         },
         variants: [
