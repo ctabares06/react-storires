@@ -1,8 +1,18 @@
-import './App.css'
-import Button from './components/Button'
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Layout from "./components/Layout";
+import Home from "./pages/home";
 
-function App() {
-  return (<Button variant="contained" color="yellow" label="Text"/>)
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: (
+      <Layout>
+        <Home />
+      </Layout>
+    ),
+  },
+]);
+
+export default function App() {
+  return <RouterProvider router={router} />
 }
-
-export default App

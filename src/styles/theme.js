@@ -3,23 +3,15 @@ import { createTheme, responsiveFontSizes } from '@mui/material';
 export default responsiveFontSizes(
   createTheme({
     palette: {
-      gray: {
-        main: '#ECE5F0',
-        light: '##F6F7FA',
+      background: {
+        default: '#000000'
       },
-      dark: {
-        main: '#12130f',
-      },
-      yellow: {
-        main: '#F5D547',
-      },
-      orange: {
-        main: '#EE6123',
-      },
-      purple: {
-        main: '#894384',
-        light: '#AE5BA9',
-      },
+      primary: {
+        main: '#14213D',
+      }, 
+      secondary: {
+        main: '#FCA311',
+      }
     },
     typography: {
       fontFamily: ['Montserrat', 'sans-serif'].join(','),
