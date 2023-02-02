@@ -1,14 +1,23 @@
-import React from "react";
-import Navbar from "../components/Navbar";
+import React from 'react';
+import Navbar from '../components/Navbar';
 
 export default {
-  title: "Navbar",
-  component: Navbar,
+	title: 'Navbar',
+	component: Navbar,
+	argTypes: {
+		position: {
+			control: 'select',
+			options: ['absolute', 'fixed', 'relative', 'static', 'sticky'],
+		},
+	},
 };
 
-const Template = (args) => <Navbar {...args} />;
+function Template(args) {
+	return <Navbar {...args} />;
+}
 
 export const Main = Template.bind({});
 Main.args = {
-  variant: "elevation",
+	variant: 'elevation',
+	position: 'fixed',
 };
