@@ -63,22 +63,6 @@ export default responsiveFontSizes(
             fontWeight: 'bold',
           }),
         },
-        variants: [
-          {
-            props: { variant: 'contained', color: 'yellow' },
-            style: ({ theme }) => ({
-              background: theme.palette.yellow.main,
-              color: theme.palette.gray.main,
-            }),
-          },
-          {
-            props: { variant: 'contained', color: 'purple' },
-            style: ({ theme }) => ({
-              background: theme.palette.purple.main,
-              color: theme.palette.gray.main,
-            }),
-          },
-        ],
       },
     },
   })

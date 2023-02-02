@@ -1,9 +1,9 @@
 import React from 'react';
-import { ButtonBase } from "@mui/material";
+import { Button as ButtonMui } from "@mui/material";
 
 const Button = ({label, ...props}) => {
   return (
-    <ButtonBase {...props}>{label}</ButtonBase>
+    <ButtonMui {...props}>{label}</ButtonMui>
   ) 
 }
 

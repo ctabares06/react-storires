@@ -4,9 +4,14 @@ import Navbar from "../Navbar";
 
 const Footbar = () => {
   return (
-    <Navbar position="relative" sx={{
-      alignItems: 'center',
-    }}>
+    <Navbar
+      position="relative"
+      component="Footer"
+      sx={{
+        marginTop: "auto",
+        alignItems: "center",
+      }}
+    >
       <Typography variant="h6" component="div">
         © All rights reserved
       </Typography>

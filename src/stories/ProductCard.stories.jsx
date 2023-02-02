@@ -1,8 +1,5 @@
-import { ThemeProvider } from "@emotion/react";
-import { CssBaseline } from "@mui/material";
 import React from "react";
 import ProductCard from "../components/ProductCard";
-import theme from "../styles/theme";
 
 export default {
   title: "ProductCard",
@@ -13,13 +10,6 @@ export default {
     },
   },
 };
-
-const whitThemeProvider = (Story, context) => (
-  <ThemeProvider theme={theme}>
-    <CssBaseline />
-    <Story {...context} />
-  </ThemeProvider>
-);
 
 const Template = (args) => <ProductCard {...args} />;
 
@@ -36,4 +26,3 @@ Main.args = {
     price: "100100.000",
   },
 };
-Main.decorators = [whitThemeProvider];
