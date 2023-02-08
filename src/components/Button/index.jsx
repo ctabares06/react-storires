@@ -1,11 +1,13 @@
 import React from 'react';
-import { Button as ButtonMui } from "@mui/material";
+import PropTypes from 'prop-types';
+import { Button as ButtonMui } from '@mui/material';
 
-const Button = ({label, ...props}) => {
-  return (
-    <ButtonMui {...props}>{label}</ButtonMui>
-  ) 
+function Button({ label, ...props }) {
+	return <ButtonMui {...props}>{label}</ButtonMui>;
 }
 
-export default Button;
+Button.propTypes = {
+	label: PropTypes.string.isRequired,
+};
 
+export default Button;

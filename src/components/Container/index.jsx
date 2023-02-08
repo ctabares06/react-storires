@@ -1,8 +1,8 @@
-import React from "react";
-import { Container as MuiContainer } from "@mui/material";
+import React from 'react';
+import { Container as MuiContainer } from '@mui/material';
 
-const Container = ({ children, ...rest }) => {
-  return <MuiContainer {...rest}>{children}</MuiContainer>;
-};
+function Container({ children, ...rest }) {
+	return <MuiContainer {...rest}>{children}</MuiContainer>;
+}
 
 export default Container;
